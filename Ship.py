@@ -1,8 +1,7 @@
 import pygame
 
-class Shp(pygame.sprite.Sprite)
-    def __init__(self, pos, size):
-        super().__init__()
+class Ship(pygame.sprite.Sprite):
+    def __init__(self, pos):
         self.image = pygame.image.load("Millenium_Falcon.png")
         self.image = pygame.transform.smoothscale(self.image, (40, 40))
         self.image = pygame.transform.rotate(self.image, -90)
